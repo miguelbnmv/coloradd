@@ -269,9 +269,10 @@ footer {
 }
 
 footer .footer_info {
+  width: 100vw;
   padding-top: 40px;
-  justify-content: space-around;
   display: flex;
+  justify-content: space-around;
 }
 
 .footer_info h1 {
