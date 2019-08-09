@@ -59,7 +59,7 @@ nav a {
 
 /*----------------------QUESTS------------------------*/
 #question_tab {
-  height: 500px;
+  height: 400px;
 }
 
 .tab {
@@ -280,9 +280,73 @@ nav a {
   color: #FFCF26;
 }
 
+/*----------------------TEAM------------------------*/
+#team {
+  height: 800px;
+  display: block;
+}
+
+.team_text {
+  right: 0;
+  position: absolute;
+  margin-top: 60px;
+  padding-right: 140px;
+}
+
+.team_text h1 {
+  position: absolute;
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 68px;
+  margin-top: -40px;
+  color: rgba(0, 0, 0, 0.06);
+}
+
+.team_text h3 {
+  font-size: 27px;
+  padding-left: 68px;
+}
+
+.team_text h3::after {
+  display: block;
+  padding-left: 50px;
+  content: '';
+  margin-left: 30%;
+  height: 4px;
+  background: #FFCF26;
+  margin-top: 4px;
+}
+
+.team_container {
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.member_description {
+  padding-top: 30px;
+}
+
+.member h1 {
+  position: absolute;
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 68px;
+  margin-top: -34px;
+  color: rgba(0, 0, 0, 0.06);
+}
+
+.member h3 {
+  font-size: 28px;
+}
+
+
 /*----------------------SOCIAL------------------------*/
 #social {
-  height: 800px;
+  height: 400px;
 }
 
 .social_title {
@@ -329,6 +393,7 @@ nav a {
   font-size: 1em;
   padding-top: 180px;
   width: 80%;
+  padding-bottom: 100px;
 }
 
 @media screen and (max-width: 980px) {
@@ -351,7 +416,7 @@ nav a {
     width: 100%;
     font-size: 11px;
     padding-top: 100px;
-      color: #666363;
+    color: #666363;
   }
 }
 
@@ -433,67 +498,4 @@ figure#slideshow img:first-child {
 
 *:-webkit-full-screen {
   background: #fff;
-}
-
-/*----------------------TEAM------------------------*/
-#team {
-  height: 800px;
-  display: block;
-}
-
-.team_text {
-  right: 0;
-  position: absolute;
-  margin-top: 60px;
-  padding-right: 140px;
-}
-
-.team_text h1 {
-  position: absolute;
-  font-family: Open Sans;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 68px;
-  margin-top: -40px;
-  color: rgba(0, 0, 0, 0.06);
-}
-
-.team_text h3 {
-  font-size: 27px;
-  padding-left: 68px;
-}
-
-.team_text h3::after {
-  display: block;
-  padding-left: 50px;
-  content: '';
-  margin-left: 30%;
-  height: 4px;
-  background: #FFCF26;
-  margin-top: 4px;
-}
-
-.team_container {
-  padding-top: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.member_description {
-  padding-top: 30px;
-}
-
-.member h1 {
-  position: absolute;
-  font-family: Open Sans;
-  font-weight: 800;
-  font-size: 42px;
-  line-height: 68px;
-  margin-top: -34px;
-  color: rgba(0, 0, 0, 0.06);
-}
-
-.member h3 {
-  font-size: 28px;
 }

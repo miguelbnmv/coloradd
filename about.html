@@ -259,79 +259,6 @@
   </section>
 
 
-  <section id="social">
-    <div class="social_title">
-      <h1>SOCIAL</h1>
-      <h3>COLORADD</h3>
-    </div>
-    <figure id="container" onclick="fullScreen(this)">
-      <figure id="slideshow">
-        <img src="img/soc2.jpg">
-        <img src="img/soc3.jpg">
-        <img src="img/soc4.jpg">
-        <img src="img/soc5.jpg">
-        <img src="img/soc6.jpg">
-        <img src="img/soc7.jpg">
-        <img src="img/soc8.jpg">
-        <img src="img/soc1.jpg">
-      </figure>
-    </figure>
-
-    <div class="social_text">
-      <h2>ColorADD.Social is a non-profit association dedicated to <br> promote social integration of the colorblind people.</h2>
-      <p>Born in 2012, it's main concern is to raise awareness to the colorblindness issue, especially near the school community, training and contributing to an Inclusive School, by promoting the early screening of colorblindness in childhood, and
-        granting color accessibility in Libraries and School Classes through the adoption of the ColorADD code.</p>
-    </div>
-
-
-    <script type="text/javascript">
-      function cancelFullScreen() {
-        if (document.cancelFullScreen) {
-          document.cancelFullScreen();
-        } else if (document.mozCancelFullScreen) {
-          document.mozCancelFullScreen();
-        } else if (document.webkitCancelFullScreen) {
-          document.webkitCancelFullScreen();
-        } else if (document.msCancelFullScreen) {
-          document.msCancelFullScreen();
-        }
-        link = document.getElementById("container");
-        link.removeAttribute("onclick");
-        link.setAttribute("onclick", "fullScreen(this)");
-      }
-
-      function fullScreen(element) {
-        if (element.requestFullScreen) {
-          element.requestFullScreen();
-        } else if (element.webkitRequestFullScreen) {
-          element.webkitRequestFullScreen();
-        } else if (element.mozRequestFullScreen) {
-          element.mozRequestFullScreen();
-        }
-        link = document.getElementById("container");
-        link.removeAttribute("onclick");
-        link.setAttribute("onclick", "cancelFullScreen()");
-      }
-
-      window.onload = function() {
-        imgs = document.getElementById('slideshow').children;
-        interval = 8000;
-        currentPic = 0;
-        imgs[currentPic].style.webkitAnimation = 'fadey ' + interval + 'ms';
-        imgs[currentPic].style.animation = 'fadey ' + interval + 'ms';
-        var infiniteLoop = setInterval(function() {
-          imgs[currentPic].removeAttribute('style');
-          if (currentPic == imgs.length - 1) {
-            currentPic = 0;
-          } else {
-            currentPic++;
-          }
-          imgs[currentPic].style.webkitAnimation = 'fadey ' + interval + 'ms';
-          imgs[currentPic].style.animation = 'fadey ' + interval + 'ms';
-        }, interval);
-      }
-    </script>
-
     <section id="team">
 
       <div class="team_text">
@@ -365,11 +292,80 @@
 
       </div>
 
-
     </section>
 
+    <section id="social">
+      <div class="social_title">
+        <h1>SOCIAL</h1>
+        <h3>ColorADD.Social</h3>
+      </div>
+      <figure id="container" onclick="fullScreen(this)">
+        <figure id="slideshow">
+          <img src="img/soc2.jpg">
+          <img src="img/soc3.jpg">
+          <img src="img/soc4.jpg">
+          <img src="img/soc5.jpg">
+          <img src="img/soc6.jpg">
+          <img src="img/soc7.jpg">
+          <img src="img/soc8.jpg">
+          <img src="img/soc1.jpg">
+        </figure>
+      </figure>
+
+      <div class="social_text">
+        <h2>ColorADD.Social is a non-profit association dedicated to <br> promote social integration of the colorblind people.</h2>
+        <p>Born in 2012, it's main concern is to raise awareness to the colorblindness issue, especially near the school community, training and contributing to an Inclusive School, by promoting the early screening of colorblindness in childhood, and
+          granting color accessibility in Libraries and School Classes through the adoption of the ColorADD code.</p>
+      </div>
 
 
+      <script type="text/javascript">
+        function cancelFullScreen() {
+          if (document.cancelFullScreen) {
+            document.cancelFullScreen();
+          } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+          } else if (document.webkitCancelFullScreen) {
+            document.webkitCancelFullScreen();
+          } else if (document.msCancelFullScreen) {
+            document.msCancelFullScreen();
+          }
+          link = document.getElementById("container");
+          link.removeAttribute("onclick");
+          link.setAttribute("onclick", "fullScreen(this)");
+        }
+
+        function fullScreen(element) {
+          if (element.requestFullScreen) {
+            element.requestFullScreen();
+          } else if (element.webkitRequestFullScreen) {
+            element.webkitRequestFullScreen();
+          } else if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+          }
+          link = document.getElementById("container");
+          link.removeAttribute("onclick");
+          link.setAttribute("onclick", "cancelFullScreen()");
+        }
+
+        window.onload = function() {
+          imgs = document.getElementById('slideshow').children;
+          interval = 8000;
+          currentPic = 0;
+          imgs[currentPic].style.webkitAnimation = 'fadey ' + interval + 'ms';
+          imgs[currentPic].style.animation = 'fadey ' + interval + 'ms';
+          var infiniteLoop = setInterval(function() {
+            imgs[currentPic].removeAttribute('style');
+            if (currentPic == imgs.length - 1) {
+              currentPic = 0;
+            } else {
+              currentPic++;
+            }
+            imgs[currentPic].style.webkitAnimation = 'fadey ' + interval + 'ms';
+            imgs[currentPic].style.animation = 'fadey ' + interval + 'ms';
+          }, interval);
+        }
+      </script>
 
     <footer>
 

@@ -158,7 +158,7 @@ nav a {
 
 /*-----------------------INTRO------------------------*/
 #intro {
-  height: 640px;
+  height: 610px;
 }
 
 #intro .intro_container {
@@ -166,14 +166,14 @@ nav a {
   padding-top: 60px;
 }
 
-#intro .intro_img {
+#intro .intro_vid {
   margin-top: 20px;
   padding: 80px;
 }
 
 #intro .intro_text {
   width: 50%;
-  padding: 140px 80px 80px 0;
+  padding: 135px 80px 80px 0;
 }
 
 .intro_text h1 {
@@ -214,7 +214,7 @@ nav a {
     display: block;
   }
 
-  #intro .intro_img {
+  #intro .intro_vid {
     margin-top: 0;
     padding: 0 40px 40px 40px;
   }
@@ -345,12 +345,12 @@ nav a {
 
 /*-----------------------FAQ------------------------*/
 #FAQ {
-  height: 980px;
+  height: 920px;
 }
 
 #FAQ .faq_title {
   float: right;
-  margin-top: 140px;
+  margin-top: 80px;
   padding-right: 80px;
 }
 
@@ -360,17 +360,13 @@ nav a {
   font-weight: 800;
   font-size: 40px;
   line-height: 68px;
-  margin-top: -40px;
+  margin-top: -30px;
   color: rgba(0, 0, 0, 0.06);
-}
-
-.faq_title h4 {
-  display: none;
 }
 
 .faq_title h3 {
   font-size: 28px;
-  padding-left: 300px;
+  padding-left: 155px;
 }
 
 .faq_title h3::after {
@@ -397,7 +393,7 @@ nav a {
 }
 
 .accordion {
-  padding-top: 300px;
+  padding-top: 240px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -469,21 +465,6 @@ nav a {
   .faq_title h3 {
     font-size: 20px;
     padding-left: 150px;
-  }
-
-  .faq_title h1 {
-    display: none;
-  }
-
-  .faq_title h4 {
-    display: block;
-    position: absolute;
-    font-family: Open Sans;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 68px;
-    margin-top: -40px;
-    color: rgba(0, 0, 0, 0.06);
   }
 
   .faq_title h3::after {

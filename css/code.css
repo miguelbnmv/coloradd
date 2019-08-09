@@ -39,18 +39,19 @@ nav a {
 
 .code_legend {
   display: flex;
-  justify-content: center;
-  padding-top: 60px;
-  text-align: center;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.code_legend a img {
-  width: 30%;
+#logo:hover + #legend {
+  display: block;
 }
-
-.legend {
+#legend {
   display: none;
 }
+
+
+
 
 /*----------------------VIDEO------------------------*/
 #code_video {

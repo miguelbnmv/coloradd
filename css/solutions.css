@@ -1,6 +1,44 @@
 nav a {
   color:#666363;
 }
+
+/*----------------------INTRO------------------------*/
+.intro_title {
+  padding-top: 100px;
+  padding-left: 80px;
+  width: 30%;
+}
+.intro_title a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.10);
+}
+.intro_title a:hover {
+  color: #FFCF26;
+  transition: 0.15s;
+}
+.intro_title h1 {
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 95px;
+  color: rgba(0, 0, 0);
+}
+.intro_title h3 {
+  font-weight: bold;
+  font-size: 42px;
+}
+
+@media screen and (max-width: 600px) {
+  .intro_title h1 {
+    font-size: 32px;
+  }
+
+  .intro_title h3 {
+    font-size: 20px;
+  }
+}
+
+
 /*----------------------SOLUTIONS------------------------*/
 
 #clothing , #environment , #games , #health , #transports , #supplies{
@@ -11,8 +49,12 @@ nav a {
   padding-left: 80px;
 }
 #clothing .solutions_title {
-  padding-top: 100px;
+  padding-top: 200px;
 }
+.container {
+  padding-top: 20px;
+}
+
 .solutions_title h1 {
   position: absolute;
   font-family: Open Sans;
@@ -35,6 +77,13 @@ nav a {
   font-weight: bold;
   font-size: 42px;
   line-height: 87px;
+}
+
+.solutions_title p {
+  padding-top: 20px;
+  width: 50%;
+  color:#666363;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 600px) {
