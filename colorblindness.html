@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/colorblindness.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/plugins/debug.addIndicators.min.js"></script>
+    <title>Colorblindness</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt="logo_colorAdd"></a>
+        </div>
+        <div class="options">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="colorblindness.html"</a>Colorblindness</li>
+            <li><a href="code.html">Code</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="midia.html">Midia</a></li>
+            <button id="myBtn">Contact Us</button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <section id="cb_header">
+      <div class="cb_title">
+        <h1>WHAT IS</h1>
+        <h3>COLORBLINDNESS</h3>
+      </div>
+    </section>
+
+    <section id="quest1">
+      <h2>What is it?</h2>
+    </section>
+
+    <section>
+      <div class="scrollContent">
+	<section id="titlechart">
+
+		<script>
+			// init controller
+			var controller = new ScrollMagic.Controller();
+		</script>
+	</section>
+	<section class="demo">
+
+		<div id="reveal1" class="box2 blue">
+
+			<p>There are different causes of color blindness. For the vast majority of people with deficient color vision the condition is genetic and has been inherited from their mother.
+Most colorblind people are able to see things as clearly as other people, but they are unable to fully ‘see’ colors. There are different types of colorblindness and there are extremely rare cases where people are unable to see any color at all.
+</p>
+
+		</div>
+		<script>
+				// build scene
+				new ScrollMagic.Scene({
+									triggerElement: "#trigger1",
+									triggerHook: 0.9, // show, when scrolled 10% into view
+									duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
+									offset: 50 // move trigger to center of element
+								})
+								.setClassToggle("#reveal1", "visible") // add class to reveal
+								.addIndicators() // add indicators (requires plugin)
+								.addTo(controller);
+		</script>
+	</section>
+
+
+  <section id="impacts">
+
+  </section>
+
+
+
+
+
+  </body>
+
+
+
+
+
+
+
+
+  <footer>
+
+    <div class="footer_info">
+
+      <div class="footer_about">
+        <h1>About</h1>
+        <p>Solutions</p>
+        <p>The Code</p>
+        <p>ColorADD Social</p>
+      </div>
+      <div class="footer_office">
+        <h1>Office</h1>
+        <p>Rua de Miguel Bombarda, 93</p>
+        <p>4050-381 Porto, Portugal</p>
+      </div>
+      <div class="footer_contact">
+        <h1>Contact</h1>
+        <p>+351 917 526 446</p>
+        <p>+351 229 372 053</p>
+        <p>info@coloradd.net</p>
+      </div>
+    </div>
+    <div class="footer_sep"> </div>
+
+    <div class="footer_social">
+      <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="img/fb.png" width="3%"></a>
+      <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="img/lkin.png" width="3%"></a>
+      <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="img/tt.png" width="3%"></a>
+      <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="img/insta.png" width="3%"></a>
+    </div>
+
+  </footer>
+</html>
