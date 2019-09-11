@@ -5,6 +5,9 @@
   transition: all 4s ease-in-out;
   column-gap: 30px;
   column-fill: initial;
+  float: right;
+  margin: 40px 80px 0;
+  max-width: 1080px;
 }
 
 /* Masonry item */
@@ -25,10 +28,26 @@
   opacity: .65;
 }
 
+.masonry .brick a {
+  display: none;
+}
+
 .masonry .brick:hover a {
   display: flex;
 }
 
+.brick {
+  position: relative;
+  text-align: center;
+}
+
+.brick .controls {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* Masonry on tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {

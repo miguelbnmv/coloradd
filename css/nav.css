@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   font-family: 'Poppins';
+  box-sizing: border-box;
 }
 
 /*----------------------NAVBAR------------------------*/
@@ -10,38 +11,35 @@ nav {
   width: 100%;
   height: 60px;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
 }
 
-nav.black {
-  background: transparent;
-  height: 60px;
+nav img {
+  width: 40px;
 }
 
-nav.black li {
+.hidden .nav-links ul {
   display: none;
 }
 
-.logo img {
-  position: fixed;
-  width: 3%;
-  padding-top: 1em;
-  padding-left: 20px;
+nav .nav-links {
+  display: flex;
+  align-items: center;
 }
 
-nav ul {
-  text-align: right;
+nav .nav-links ul {
+  display: flex;
   list-style: none;
-  padding-top: 20px;
-  padding-right: 30px;
 }
 
-nav li {
-  display: inline-block;
-  position: relative;
-  padding: 0 1em 1em 1em;
+nav .nav-links ul li {
+  padding: 0 10px;
 }
 
-nav li a:hover {
+nav .nav-links ul li a:hover {
   color: #FFCF26;
   transition: 0.5s;
 }
@@ -56,7 +54,7 @@ nav a {
 
 nav button {
   margin-left: 1em;
-  padding: 4px 20px 4px 20px;
+  padding: 4px 20px;
   font-size: 18px;
   border-radius: 30px;
   border-style: none;
@@ -295,16 +293,19 @@ footer .footer_info {
   width: 80%;
   height: 1px;
   background: #8E8484;
-  margin-top: 40px;
+  margin: 40px auto 20px;
 }
 
 .footer_social {
   text-align: center;
-  margin-top: 20px;
 }
 
 .footer_social a {
   margin-left: 10px;
+}
+
+.footer_social a img {
+  min-width: 30px;
 }
 
 @media screen and (max-width: 530px) {

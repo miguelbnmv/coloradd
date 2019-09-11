@@ -44,15 +44,14 @@ nav a {
 #clothing , #environment , #games , #health , #transports , #supplies{
   height: 1300px;
 }
+
 .solutions_title {
   padding-top: 100px;
   padding-left: 80px;
 }
+
 #clothing .solutions_title {
   padding-top: 200px;
-}
-.container {
-  padding-top: 20px;
 }
 
 .solutions_title h1 {

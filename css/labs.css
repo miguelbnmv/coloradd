@@ -34,30 +34,6 @@ html {
 /**
  * CONTENT WRAPPER
  */
-.wrapper {
-  float: right;
-  margin-top: 40px;
-  margin-right: 80px;
-  margin-left: 80px;
-  max-width: 1080px;
-}
-
-.brick {
-  position: relative;
-  text-align: center;
-}
-
-.brick .controls {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.masonry .brick a {
-  display: none;
-}
 
 /**
 * MEDIA SETTINGS

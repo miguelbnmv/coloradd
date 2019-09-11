@@ -38,20 +38,24 @@ nav a {
 }
 
 .code_legend {
+  width: 80%;
   display: flex;
-  text-align:center;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: space-around;
+  margin: 2rem auto;
 }
-#logo:hover + #legend {
+
+.code_legend img {
+  width: 40%;
+  height: auto;
+}
+
+.code_legend:hover > #legend {
   display: block;
 }
+
 #legend {
   display: none;
 }
-
-
-
 
 /*----------------------VIDEO------------------------*/
 #code_video {
