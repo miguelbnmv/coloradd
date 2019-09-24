@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/code.css">
   <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/masonry.css">
+  <link rel="stylesheet" href="css/hamburguer.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
@@ -16,23 +18,47 @@
 
 
   <nav>
-    <div class="navbar">
-      <div class="logo">
-        <a href="index.html"><img src="img/logo.png" alt="logo_colorAdd"></a>
-      </div>
-      <div class="options">
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="code.html">Code</a></li>
-          <li><a href="solutions.html">Solutions</a></li>
-          <li><a href="FAQ.html">FAQ</a></li>
-          <!--<button id="myBtn">Contact Us</button> TESTE PORQUE NAO ESTA A FUNCIONAR-->
-          <button type="button" name="button">Contact Us</button>
-          <!--ESTE ERA O QUE ESTAVA ANTES -->
-        </ul>
-      </div>
+    <a href="index.html"><img src="img/logo.png" alt="logo_colorAdd"></a>
+    <div class="nav-links">
+      <ul class="options">
+        <li><a href="about.html">About</a></li>
+        <li><a href="colorblindness.html">Color Blindness</a></li>
+        <li><a href="code.html">Code</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="midia.html">Midia</a></li>
+      </ul>
+      <button id="myBtn">Contact Us</button>
     </div>
   </nav>
+  <section id="hamburguer">
+    <input id="menu-hamburguer" type="checkbox">
+    <label for="menu-hamburguer">
+      <div class="menu-select">
+        <span class="hamburguer"></span>
+      </div>
+    </label>
+    <div class="menu">
+      <ul>
+        <a href="about.html">
+          <li>About</li>
+        </a>
+        <a href="code.hmtl">
+          <li>Code</li>
+        </a>
+        <a href="solutions.html">
+          <li>Solutions</li>
+        </a>
+        <a href="midia.html">
+          <li>FAQ</li>
+        </a>
+        <a href="#">
+          <li>Contact Us</li>
+        </a>
+      </ul>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/hamburguer.js"></script>
+  </section>
 
   <section id="code_intro">
     <div class="code_title">

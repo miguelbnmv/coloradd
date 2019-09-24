@@ -72,12 +72,13 @@ input:checked~label .hamburguer:after {
   font-weight: bold;
   font-size: 0.8em;
   width: 100%;
-  background: #f1f1f1;
+  background: #fff;
   position: absolute;
   position: fixed;
   text-align: center;
   font-size: 12px;
 }
+
 
 .menu ul {
   margin: 0;
