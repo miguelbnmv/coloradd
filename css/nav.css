@@ -71,12 +71,9 @@ nav button:hover {
 }
 
 @media screen and (max-width: 980px) {
-  .logo img {
-    width: 10%;
+  nav {
+    padding: 0 10px;
   }
-}
-
-@media screen and (max-width: 980px) {
   nav li, button {
     display: none;
   }
@@ -263,7 +260,7 @@ nav button:hover {
 
 /*-----------------------FOOTER------------------------*/
 footer {
-  height: 320px;
+  min-height: 320px;
 }
 
 footer .footer_info {
@@ -309,12 +306,9 @@ footer .footer_info {
 }
 
 @media screen and (max-width: 530px) {
-  footer {
-    height: 300px;
-  }
 
   footer .footer_info {
-    padding-top: 60px;
+    padding-top: 20px;
     display: block;
     text-align: center;
   }
@@ -326,7 +320,7 @@ footer .footer_info {
   }
 
   .footer_info p {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .footer_sep::after {
@@ -336,5 +330,6 @@ footer .footer_info {
 
   .footer_social {
     margin-top: 5px;
+    margin-bottom: 20px;
   }
 }

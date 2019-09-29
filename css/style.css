@@ -4,7 +4,7 @@ nav a {
 /*-----------------------HOME------------------------*/
 #home {
   height: 700px;
-  cursor: crosshair;
+  cursor: none;
 }
 
 #home .home_title {
@@ -158,7 +158,7 @@ nav a {
 
 /*-----------------------INTRO------------------------*/
 #intro {
-  height: 610px;
+  min-height: 610px;
 }
 
 #intro .intro_container {
@@ -207,16 +207,18 @@ nav a {
 
 @media screen and (max-width: 980px) {
   #intro {
-    height: 1000px;
+    height: 800px;
   }
 
   #intro .intro_container {
     display: block;
   }
-
   #intro .intro_vid {
     margin-top: 0;
     padding: 0 40px 40px 40px;
+  }
+  #intro video {
+    width: 90%;
   }
 
   #intro .intro_text {
@@ -233,12 +235,17 @@ nav a {
 
 @media screen and (max-width: 530px) {
   #intro {
-    height: 600px;
+    height: 650px;
     font-size: 13px;
+  }
+  #intro .intro_container {
+    padding-top: 0px;
+    margin-top: -15px;
   }
 
   #intro .intro_text {
     padding-top: 0px;
+    margin-top: -50px;
   }
 
   .intro_text h1 {
@@ -345,7 +352,8 @@ nav a {
 
 /*-----------------------FAQ------------------------*/
 #FAQ {
-  height: 920px;
+  min-height: 750px;
+  margin-bottom: 80px;
 }
 
 #FAQ .faq_title {
@@ -451,11 +459,16 @@ nav a {
   .accordion {
     width: 80%;
   }
+  .accordion .accordion-item {
+    padding: 15px;
+    width: 95%;
+    margin-top: 50px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   #FAQ {
-    height: 800px;
+    min-height: 580px;
   }
 
   #FAQ .faq_title {
@@ -478,8 +491,7 @@ nav a {
 
   .accordion .accordion-item {
     padding: 15px;
-    width: 80%;
-    margin-top: 40px;
+
   }
 
   .accordion h1 {
@@ -553,17 +565,19 @@ nav a {
   background-image: url(../img/sol_6_c.jpg);
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 770px) {
   #solutions {
     height: 360px;
   }
-
-  .sol_text p {
-    font-size: 12px;
-    padding-left: 10px;
-  }
-
   .container_img>div {
     height: 30%;
+  }
+
+  .solutions-text {
+    margin-top: 60px;
+    font-size: 11px;
+    display: block;
+    background-color: transparent;
+    padding: 0px;
   }
 }

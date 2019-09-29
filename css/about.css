@@ -35,9 +35,6 @@ nav a {
 }
 
 @media screen and (max-width: 700px) {
-  #intro {
-    height: 200px;
-  }
 
   .about_title {
     padding-top: 80px;
@@ -52,11 +49,14 @@ nav a {
   .about_title h3 {
     font-size: 20px;
   }
+  .about_title h3::after {
+    margin-top: -20px;
+  }
 }
 
 /*----------------------QUESTS------------------------*/
 #question_tab {
-  height: 400px;
+  min-height: 460px;
 }
 
 .tab {
@@ -182,7 +182,7 @@ nav a {
 .story_img img {
   float: right;
   margin-right: 80px;
-  width: 90%;
+  min-width: 100px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -214,6 +214,9 @@ nav a {
 }
 
 @media screen and (max-width: 530px) {
+  #story {
+    height: 200px;
+  }
   .story_text h1 {
     font-size: 32px;
     margin-top: -30px;
@@ -225,12 +228,12 @@ nav a {
 }
 
 /*----------------------ACCORDION------------------------*/
-.info_accordion {
+.info-accordion {
   margin-left: 80px;
   margin-top: 60px;
 }
 
-.info_accordion .accordion {
+.info-accordion .accordion {
   color: #000000;
   padding: 20px;
   width: 65%;
@@ -242,11 +245,11 @@ nav a {
   border-bottom: 4px solid #DADADA;
 }
 
-.info_accordion button.accordion::after {
+.info-accordion button.accordion::after {
   color: #FFCF26;
 }
 
-.info_accordion .accordion:after {
+.info-accordion .accordion:after {
   content: '\002B';
   color: #777;
   font-weight: bold;
@@ -254,7 +257,7 @@ nav a {
   margin-left: 5px;
 }
 
-.info_accordion .active:after {
+.info-accordion .active:after {
   content: "\2212";
 }
 
@@ -276,6 +279,11 @@ nav a {
   text-decoration: none;
   color: #FFCF26;
 }
+@media screen and (max-width: 530px) {
+  .info-accordion {
+    display: none;
+  }
+}
 
 /*----------------------TEAM------------------------*/
 #team {
@@ -283,14 +291,14 @@ nav a {
   display: block;
 }
 
-.team_text {
+.team-text {
   right: 0;
   position: absolute;
   margin-top: 60px;
   padding-right: 140px;
 }
 
-.team_text h1 {
+.team-text h1 {
   position: absolute;
   font-family: Open Sans;
   font-weight: 800;
@@ -300,12 +308,12 @@ nav a {
   color: rgba(0, 0, 0, 0.06);
 }
 
-.team_text h3 {
+.team-text h3 {
   font-size: 27px;
   padding-left: 68px;
 }
 
-.team_text h3::after {
+.team-text h3::after {
   display: block;
   padding-left: 50px;
   content: '';
@@ -315,14 +323,14 @@ nav a {
   margin-top: 4px;
 }
 
-.team_container {
+.team-container {
   padding-top: 200px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.member_description {
+.member-description {
   padding-top: 30px;
 }
 
@@ -338,6 +346,26 @@ nav a {
 
 .member h3 {
   font-size: 28px;
+}
+
+@media screen and (max-width: 600px) {
+  .team-text {
+    padding-right: 0px;
+    background-color: #f00;
+  }
+  .team-text h1 {
+    font-size: 32px;
+    margin-left: 100px;
+  }
+  .team-text h3 {
+    font-size: 20px;
+    padding-left: 150px;
+    padding-left: 0px;
+  }
+
+  .team-text h3::after {
+    width: 10%;
+  }
 }
 
 

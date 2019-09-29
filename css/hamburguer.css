@@ -9,13 +9,14 @@
 
 .menu-select {
   background: #FFCF26;
+  opacity: 0.8;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   z-index: 1;
   position: fixed;
   bottom: 25px;
-  right: 25px;
+  right: 10px;
 }
 
 .hamburguer {
@@ -72,32 +73,29 @@ input:checked~label .hamburguer:after {
   font-weight: bold;
   font-size: 0.8em;
   width: 100%;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   position: fixed;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 
 .menu ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  list-style-image: none;
 }
 
 .menu li {
   display: block;
   padding: 15px 0 15px 0;
-  border-bottom: #dddddd 1px solid;
+  border-bottom: #666 1px solid;
 }
 
 .menu li:hover {
   display: block;
   background: #ffffff;
   padding: 15px 0 15px 0;
-  border-bottom: #dddddd 1px solid;
 }
 
 .menu ul li a {
