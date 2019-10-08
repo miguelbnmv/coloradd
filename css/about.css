@@ -351,20 +351,19 @@ nav a {
 @media screen and (max-width: 600px) {
   .team-text {
     padding-right: 0px;
-    background-color: #f00;
   }
   .team-text h1 {
     font-size: 32px;
-    margin-left: 100px;
+    margin-left: 50px;
   }
   .team-text h3 {
     font-size: 20px;
-    padding-left: 150px;
-    padding-left: 0px;
+    margin-right: 40px;
   }
 
+
   .team-text h3::after {
-    width: 10%;
+    width: 65%;
   }
 }
 
