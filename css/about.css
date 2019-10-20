@@ -250,7 +250,7 @@ nav a {
 }
 
 .info-accordion .accordion:after {
-  content: '\002B';
+  content: attr(symbol-plus);
   color: #777;
   font-weight: bold;
   float: right;
@@ -264,7 +264,6 @@ nav a {
 .info_accordion .panel {
   padding: 0 18px;
   background-color: white;
-  width: 60%;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
@@ -273,6 +272,7 @@ nav a {
   font-size: 16px;
   padding-top: 18px;
   color: #666363;
+  width: 60%;
 }
 
 .panel a {
@@ -281,7 +281,6 @@ nav a {
 }
 @media screen and (max-width: 530px) {
   .info-accordion {
-    display: none;
   }
 }
 

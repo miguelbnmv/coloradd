@@ -15,6 +15,9 @@
   <script src="js/scroll.js"></script>
   <script src="js/tab.js"></script>
   <script src="js/accordion.js"></script>
+  <script src="js/slider.js">
+
+  </script>
   <title>About.</title>
 </head>
 
@@ -128,35 +131,9 @@
         </form>
       </div>
     </div>
+    <script src="js/form.js"></script>
 
   </div>
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
 
   <header id="about_header">
     <div class="about_title">
@@ -192,7 +169,7 @@
 
     <div class="quests_mobile">
 
-      <div class="quest">
+      <div class="quest" symbol-plus="\002B">
         <h3>Why we do what we do.</h3>
         <p>We seek to help build a world where companies, municipalities, and the whole society come together and bring color to every person. Even to the color blind.</p>
       </div>
@@ -225,19 +202,19 @@
 
     <div class="info-accordion">
 
-      <button class="accordion">Founded in 2010</button>
+      <button class="accordion" id="accordion1" symbol-plus="+">Founded in 2010</button>
       <div class="panel">
         <p>Eight years was the time needed for Miguel Neiva to transform his masters thesis into an ethically responsible business: to create a code that allows color blind people to identify colors.</p>
         <p>And so 2010, ColorADD was born - now an exemple to follow amongst ethically responsible businesses.</p>
       </div>
 
-      <button class="accordion">+300 Partners</button>
+      <button class="accordion" id="accordion2" symbol-plus="+">+300 Partners</button>
       <div class="panel">
         <p>Our business model is based in a co-creation system with companies and municipalities.</p>
         <p>Today, thanks to this system, there are several brands and entities using the ColorADD code to improve the lives of their users. In total, there are currently more than 300 partnerships worldwide.</p>
       </div>
 
-      <button class="accordion">National & International Recognition</button>
+      <button class="accordion" id="accordion3" symbol-plus="+">National & International Recognition</button>
       <div class="panel">
         <p>Miguel Neiva, author of the Code, was named as the first Portuguese "Fellow of Ashoka", integrated in the program "Making more Health", by "Boehringer Ingelheim", in 2013. <a href="https://www.ashoka.org/en-US/fellow/miguel-neiva"
             target="_blank"> See more.</a></p>
@@ -256,113 +233,66 @@
   </section>
 
 
-    <section id="team">
+  <section id="team">
 
-      <div class="team-text">
-        <h1>MEET US</h1>
-        <h3>OUR TEAM</h3>
+    <div class="team-text">
+      <h1>MEET US</h1>
+      <h3>OUR TEAM</h3>
+    </div>
+
+    <div class="team-container">
+
+      <div class="member">
+        <img src="img/member1.jpg">
+        <div class="member-description">
+          <h1>Founder</h1>
+          <h3>Miguel Neiva</h3>
+        </div>
+      </div>
+      <div class="member">
+        <img src="img/member1.jpg">
+        <div class="member-description">
+          <h1>Founder</h1>
+          <h3>Miguel Neiva</h3>
+        </div>
+      </div>
+      <div class="member">
+        <img src="img/member1.jpg">
+        <div class="member-description">
+          <h1>Founder</h1>
+          <h3>Miguel Neiva</h3>
+        </div>
       </div>
 
-      <div class="team-container">
+    </div>
 
-        <div class="member">
-          <img src="img/member1.jpg">
-          <div class="member-description">
-            <h1>Founder</h1>
-            <h3>Miguel Neiva</h3>
-          </div>
-        </div>
-        <div class="member">
-          <img src="img/member1.jpg">
-          <div class="member-description">
-            <h1>Founder</h1>
-            <h3>Miguel Neiva</h3>
-          </div>
-        </div>
-        <div class="member">
-          <img src="img/member1.jpg">
-          <div class="member-description">
-            <h1>Founder</h1>
-            <h3>Miguel Neiva</h3>
-          </div>
-        </div>
+  </section>
 
-      </div>
-
-    </section>
-
-    <section id="social">
-      <div class="social_title">
-        <h1>SOCIAL</h1>
-        <h3>ColorADD.Social</h3>
-      </div>
-      <figure id="container" onclick="fullScreen(this)">
-        <figure id="slideshow">
-          <img src="img/soc2.jpg">
-          <img src="img/soc3.jpg">
-          <img src="img/soc4.jpg">
-          <img src="img/soc5.jpg">
-          <img src="img/soc6.jpg">
-          <img src="img/soc7.jpg">
-          <img src="img/soc8.jpg">
-          <img src="img/soc1.jpg">
-        </figure>
+  <section id="social">
+    <div class="social_title">
+      <h1>SOCIAL</h1>
+      <h3>ColorADD.Social</h3>
+    </div>
+    <figure id="container" onclick="fullScreen(this)">
+      <figure id="slideshow">
+        <img src="img/soc2.jpg">
+        <img src="img/soc3.jpg">
+        <img src="img/soc4.jpg">
+        <img src="img/soc5.jpg">
+        <img src="img/soc6.jpg">
+        <img src="img/soc7.jpg">
+        <img src="img/soc8.jpg">
+        <img src="img/soc1.jpg">
       </figure>
+    </figure>
 
-      <div class="social_text">
-        <h2>ColorADD.Social is a non-profit association dedicated to <br> promote social integration of the colorblind people.</h2>
-        <p>Born in 2012, it's main concern is to raise awareness to the colorblindness issue, especially near the school community, training and contributing to an Inclusive School, by promoting the early screening of colorblindness in childhood, and
-          granting color accessibility in Libraries and School Classes through the adoption of the ColorADD code.</p>
-      </div>
+    <div class="social_text">
+      <h2>ColorADD.Social is a non-profit association dedicated to <br> promote social integration of the colorblind people.</h2>
+      <p>Born in 2012, it's main concern is to raise awareness to the colorblindness issue, especially near the school community, training and contributing to an Inclusive School, by promoting the early screening of colorblindness in childhood, and
+        granting color accessibility in Libraries and School Classes through the adoption of the ColorADD code.</p>
+    </div>
 
 
-      <script type="text/javascript">
-        function cancelFullScreen() {
-          if (document.cancelFullScreen) {
-            document.cancelFullScreen();
-          } else if (document.mozCancelFullScreen) {
-            document.mozCancelFullScreen();
-          } else if (document.webkitCancelFullScreen) {
-            document.webkitCancelFullScreen();
-          } else if (document.msCancelFullScreen) {
-            document.msCancelFullScreen();
-          }
-          link = document.getElementById("container");
-          link.removeAttribute("onclick");
-          link.setAttribute("onclick", "fullScreen(this)");
-        }
-
-        function fullScreen(element) {
-          if (element.requestFullScreen) {
-            element.requestFullScreen();
-          } else if (element.webkitRequestFullScreen) {
-            element.webkitRequestFullScreen();
-          } else if (element.mozRequestFullScreen) {
-            element.mozRequestFullScreen();
-          }
-          link = document.getElementById("container");
-          link.removeAttribute("onclick");
-          link.setAttribute("onclick", "cancelFullScreen()");
-        }
-
-        window.onload = function() {
-          imgs = document.getElementById('slideshow').children;
-          interval = 8000;
-          currentPic = 0;
-          imgs[currentPic].style.webkitAnimation = 'fadey ' + interval + 'ms';
-          imgs[currentPic].style.animation = 'fadey ' + interval + 'ms';
-          var infiniteLoop = setInterval(function() {
-            imgs[currentPic].removeAttribute('style');
-            if (currentPic == imgs.length - 1) {
-              currentPic = 0;
-            } else {
-              currentPic++;
-            }
-            imgs[currentPic].style.webkitAnimation = 'fadey ' + interval + 'ms';
-            imgs[currentPic].style.animation = 'fadey ' + interval + 'ms';
-          }, interval);
-        }
-      </script>
 
     <footer>
 

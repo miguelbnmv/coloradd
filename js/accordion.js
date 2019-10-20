@@ -1,16 +1,18 @@
 $(document).ready(function() {
+
   $(".panel").css("display", "none")
 
-  $(".accordion").click(function() {
+  $(".accordion").click(function(e) {
     var $panel = $(this).next()
     $(".panel").slideUp()
-    $(".accordion::after").css("content", "\2212")
+    var accordionid = e.target.id
 
     if ($panel.css("display") == "none") {
       $panel.slideDown()
+      $("#" + accordionid).attr('symbol-plus', "-")
     } else {
       $panel.slideUp()
-      console.log(this.childNodes)
+      $("#" + accordionid).attr('symbol-plus', "+")
     }
   })
 })
