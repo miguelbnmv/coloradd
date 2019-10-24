@@ -74,15 +74,18 @@ nav button:hover {
   nav {
     padding: 0 10px;
   }
+
   nav li, button {
     display: none;
   }
 }
 
+.check {
+  display: none;
+}
+
 /*----------------------CONTACT------------------------*/
 .modal {
-  display: none;
-  /* Hidden by default */
   position: fixed;
   /* Stay in place */
   z-index: 1;
@@ -172,6 +175,7 @@ nav button:hover {
 
 .modal-body .pt1 {
   text-align: center;
+  margin-top: 20px;
 }
 
 .pt1 select {
@@ -180,7 +184,7 @@ nav button:hover {
   font-size: 18px;
   padding-left: 30px;
   height: 60px;
-  width: 853px;
+  width: 820px;
   border: solid 3px #ffffff;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
   outline: none;
@@ -188,8 +192,11 @@ nav button:hover {
 
 .pt2 {
   display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 40px;
+  justify-content: space-around;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .pt2 input {
@@ -199,6 +206,7 @@ nav button:hover {
   font-size: 18px;
   padding-left: 30px;
   height: 60px;
+  margin-top: 10px;
   border: none;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
   width: 402px;
@@ -220,7 +228,7 @@ nav button:hover {
   font-size: 18px;
   padding-left: 30px;
   height: 60px;
-  width: 853px;
+  width: 820px;
   border: none;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
   outline: none;
@@ -231,13 +239,13 @@ nav button:hover {
   text-align: center;
 }
 
-.pt4 input {
+.pt4 textarea{
   color: #000000;
   background-color: transparent;
   font-size: 18px;
   padding-left: 30px;
   height: 60px;
-  width: 853px;
+  width: 820px;
   border: none;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
   outline: none;
@@ -245,7 +253,7 @@ nav button:hover {
 
 .modal-body .pt5 {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 .pt5 input {
@@ -255,8 +263,6 @@ nav button:hover {
   padding: 20px 80px 20px 80px;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
 }
-
-
 
 /*-----------------------FOOTER------------------------*/
 footer {
@@ -306,7 +312,6 @@ footer .footer_info {
 }
 
 @media screen and (max-width: 530px) {
-
   footer .footer_info {
     padding-top: 20px;
     display: block;

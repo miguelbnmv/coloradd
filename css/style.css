@@ -3,7 +3,7 @@ nav a {
 }
 /*-----------------------HOME------------------------*/
 #home {
-  height: 100vh;
+  min-height: 600px;
   cursor: none;
 }
 

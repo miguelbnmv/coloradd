@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/midia.css">
-    <link rel="stylesheet" href="css/masonry.css">
-    <link rel="stylesheet" href="css/hamburguer.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <script src="js/scroll.js"></script>
-    <title>Midia</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/midia.css">
+  <link rel="stylesheet" href="css/masonry.css">
+  <link rel="stylesheet" href="css/hamburguer.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="js/scroll.js"></script>
+  <title>Midia</title>
+</head>
+
+<body>
+
+
+  <header>
+
     <nav>
       <a href="index.html"><img src="img/logo.png" alt="logo_colorAdd"></a>
       <div class="nav-links">
@@ -23,32 +30,36 @@
           <li><a href="solutions.html">Solutions</a></li>
           <li><a href="midia.html">Midia</a></li>
         </ul>
-        <button id="myBtn">Contact Us</button>
+        <button id="myBtn" onclick="revealForm()">Contact Us</button>
       </div>
     </nav>
+
     <section id="hamburguer">
-      <input id="menu-hamburguer" type="checkbox">
+      <input id="menu-hamburguer" type="checkbox" class="check">
       <label for="menu-hamburguer">
         <div class="menu-select">
           <span class="hamburguer"></span>
         </div>
       </label>
-      <div class="menu">
+      <div class="menu" id="hiddenMenu" style="display:none">
         <ul>
           <a href="about.html">
             <li>About</li>
           </a>
-          <a href="code.hmtl">
+          <a href="colorblindness.html">
+            <li>Color Blindness</li>
+          </a>
+          <a href="code.html">
             <li>Code</li>
           </a>
           <a href="solutions.html">
             <li>Solutions</li>
           </a>
           <a href="midia.html">
-            <li>FAQ</li>
+            <li>Midia</li>
           </a>
-          <a href="#">
-            <li>Contact Us</li>
+          <a>
+            <li id="myBtn" onclick="revealForm()" onclick="hideMenu()">Contact</li>
           </a>
         </ul>
       </div>
@@ -56,79 +67,146 @@
       <script src="js/hamburguer.js"></script>
     </section>
 
-    <header id="midia_header">
-      <div class="midia_title">
-        <h1>STAY TUNED</h1>
-        <h3>MIDIA</h3>
-      </div>
-      <div class="header_img">
-        <div class="header_text">
-          <h2>colorADD</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+    <div class="modal" id="hiddenForm" style="display:none">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Contact Form</h2>
         </div>
-        <img src="img/midia/header.jpg" width="85%">
-      </div>
-    </header>
 
-    <section id="midia_news">
-      <div class="news_container">
-        <div class="new">
-          <img src="img/midia/new1.jpg" width="30%">
-          <div class="new_text">
-            <h2>Title 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="pt1">
+              <select name="option">
+                <option value="" disabled selected>Type of contact</option>
+                <option value="1">Company/Enterprise</option>
+                <option value="2">Municipality</option>
+                <option value="3">School/College</option>
+                <option value="4">Hospital</option>
+                <option value="5">Individual</option>
+                <option value="6">Other</option>
+              </select>
+            </div>
+
+            <div class="pt2">
+              <input type="text" name="Name" value="Name">
+              <input type="text" name="Mail" value="Mail">
+            </div>
+
+
+            <div class="pt3">
+              <select name="option">
+                <option value="" disabled selected>Subject matter</option>
+                <option value="1">Licensing</option>
+                <option value="2">Employment</option>
+                <option value="3">ColorADD Social</option>
+                <option value="4">Founds/Donations</option>
+                <option value="5">Other subject</option>
+              </select>
+            </div>
+
+            <div class="pt4">
+              <textarea name="name" rows="8" cols="80"></textarea>
+            </div>
+
+            <div class="pt5">
+              <input type="submit" name="" value="Submit"></input>
+            </div>
+
+          </form>
+
+
         </div>
-        <div class="new">
-          <img src="img/midia/new2.jpg" width="30%">
-          <div class="new_text">
-            <h2>Title 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-        </div>
-        <div class="new">
-          <img src="img/midia/new3.jpg" width="30%">
-          <div class="new_text">
-            <h2>Title 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-        </div>
       </div>
-    </section>
+      <script src="js/form.js"></script>
 
-  </body>
-
-
-  <footer>
-
-    <div class="footer_info">
-
-      <div class="footer_about">
-        <h1>About</h1>
-        <p>Solutions</p>
-        <p>The Code</p>
-        <p>ColorADD Social</p>
-      </div>
-      <div class="footer_office">
-        <h1>Office</h1>
-        <p>Rua de Miguel Bombarda, 93</p>
-        <p>4050-381 Porto, Portugal</p>
-      </div>
-      <div class="footer_contact">
-        <h1>Contact</h1>
-        <p>+351 917 526 446</p>
-        <p>+351 229 372 053</p>
-        <p>info@coloradd.net</p>
-      </div>
-    </div>
-    <div class="footer_sep"> </div>
-
-    <div class="footer_social">
-      <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="img/fb.png" width="3%"></a>
-      <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="img/lkin.png" width="3%"></a>
-      <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="img/tt.png" width="3%"></a>
-      <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="img/insta.png" width="3%"></a>
     </div>
 
-  </footer>
+  </header>
+
+
+
+  <section id="midia_header">
+    <div class="midia_title">
+      <h1>STAY TUNED</h1>
+      <h3>MIDIA</h3>
+    </div>
+    <div class="header_img">
+      <div class="header_text">
+        <h2>colorADD</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <img src="img/midia/header.jpg" width="85%">
+    </div>
+  </section>
+
+  <section id="midia_news">
+    <div class="news_container">
+      <div class="new">
+        <img src="img/midia/new1.jpg" width="30%">
+        <div class="new_text">
+          <h2>Title 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+      <div class="new">
+        <img src="img/midia/new2.jpg" width="30%">
+        <div class="new_text">
+          <h2>Title 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+      <div class="new">
+        <img src="img/midia/new3.jpg" width="30%">
+        <div class="new_text">
+          <h2>Title 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+
+<footer>
+
+  <div class="footer_info">
+
+    <div class="footer_about">
+      <h1>About</h1>
+      <p>Solutions</p>
+      <p>The Code</p>
+      <p>ColorADD Social</p>
+    </div>
+    <div class="footer_office">
+      <h1>Office</h1>
+      <p>Rua de Miguel Bombarda, 93</p>
+      <p>4050-381 Porto, Portugal</p>
+    </div>
+    <div class="footer_contact">
+      <h1>Contact</h1>
+      <p>+351 917 526 446</p>
+      <p>+351 229 372 053</p>
+      <p>info@coloradd.net</p>
+    </div>
+  </div>
+  <div class="footer_sep"> </div>
+
+  <div class="footer_social">
+    <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="img/fb.png" width="3%"></a>
+    <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="img/lkin.png" width="3%"></a>
+    <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="img/tt.png" width="3%"></a>
+    <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="img/insta.png" width="3%"></a>
+  </div>
+
+</footer>
+
 </html>
