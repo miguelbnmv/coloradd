@@ -3,18 +3,18 @@ nav a {
 }
 /*-----------------------HOME------------------------*/
 #home {
-  min-height: 600px;
+  height: 680px;
   cursor: none;
 }
 
 #home .home_title {
   position: absolute;
-  padding-left: 20px;
-  padding-top: 560px;
+  margin-left: 5%;
+  bottom: 10%;
 }
 
 .home_title h3 {
-  font-size: 100px;
+  font-size: 6em;
   color: #ffffff;
 }
 
@@ -59,27 +59,27 @@ nav a {
 
 /*--------------CASE 1---------------*/
 .mask-bg-color1 {
-  background-image: url(../img/1.jpg);
+  background-image: url(../img/deuteranopia.png);
   background-position: center;
   background-size: cover;
 }
 
 /*--------------CASE 2---------------*/
 .mask-bg-color2 {
-  background-image: url(../img/2.jpg);
+  background-image: url(../img/protanopia.png);
   background-position: center;
   background-size: cover;
 }
 
 /*--------------CASE 3---------------*/
 .mask-bg-color3 {
-  background-image: url(../img/3.jpg);
+  background-image: url(../img/tritanopia.png);
   background-position: center;
   background-size: cover;
 }
 
 .animated-bg {
-  background-image: url(../img/orig.jpg);
+  background-image: url(../img/normal.png);
   background-position: center;
   background-size: cover;
 }
@@ -103,8 +103,11 @@ nav a {
 }
 
 @media screen and (max-width: 980px) {
+  #home .home_title {
+    bottom: 15%;
+  }
   .home_title h3 {
-    font-size: 60px;
+    font-size: 4em;
   }
 
   .cases a {
@@ -136,21 +139,17 @@ nav a {
   }
 
   #home {
-    background-image: url(../img/orig.jpg);
+    background-image: url(../img/normal.png);
     background-position: center;
     background-size: cover;
+    cursor: normal;
   }
 }
 
 @media screen and (max-width: 530px) {
-  #home {
+  #home{
     height: 600px;
   }
-
-  #home .home_title {
-    padding-top: 500px;
-  }
-
   .home_title h3 {
     font-size: 2em;
   }
@@ -158,22 +157,22 @@ nav a {
 
 /*-----------------------INTRO------------------------*/
 #intro {
-  min-height: 610px;
+  height: auto;
+  padding: 3% 0 8% 0;
 }
 
 #intro .intro_container {
   display: flex;
-  padding-top: 60px;
+  margin-top: 4%;
 }
 
 #intro .intro_vid {
-  margin-top: 20px;
-  padding: 80px;
+  margin: 7% 5% 0 5%;
 }
 
 #intro .intro_text {
   width: 50%;
-  padding: 135px 80px 80px 0;
+  margin: 8% 2% 2% 0;
 }
 
 .intro_text h1 {
@@ -199,7 +198,7 @@ nav a {
 }
 
 .intro_text p {
-  padding-top: 40px;
+  margin-top: 5%;
   font-weight: lighter;
   color: #666363;
   font-size: 18px;
@@ -212,23 +211,21 @@ nav a {
 
   #intro .intro_container {
     display: block;
+    margin-top: -7%;
   }
   #intro .intro_vid {
-    margin-top: 0;
-    padding: 0 40px 40px 40px;
+    margin: 0% 5% 0 5%;
   }
   #intro video {
     width: 90%;
   }
 
   #intro .intro_text {
-    width: 80%;
-    padding: 20px;
-    margin-left: 20px;
+    width: 70%;
+    margin: 0 2% 2% 5%;
   }
 
   .intro_text p {
-    padding-top: 20px;
     font-size: 1em;
   }
 }
@@ -238,16 +235,9 @@ nav a {
     height: 650px;
     font-size: 13px;
   }
-  #intro .intro_container {
-    padding-top: 0px;
-    margin-top: -15px;
-  }
-
   #intro .intro_text {
-    padding-top: 0px;
-    margin-top: -50px;
+    margin-top: 1%;
   }
-
   .intro_text h1 {
     font-size: 32px;
   }
@@ -352,14 +342,14 @@ nav a {
 
 /*-----------------------FAQ------------------------*/
 #FAQ {
-  min-height: 750px;
-  margin-bottom: 80px;
+  height: auto;
+  padding-bottom: 15%;
 }
 
 #FAQ .faq_title {
   float: right;
   margin-top: 80px;
-  padding-right: 80px;
+  margin-right: 8%;
 }
 
 .faq_title h1 {
@@ -387,7 +377,7 @@ nav a {
   margin-top: 4px;
 }
 
-/* The Magic */
+
 .accordion:hover .accordion-item:hover .accordion-item-content,
 .accordion .accordion-item--default .accordion-item-content {
   height: 9em;
@@ -467,9 +457,6 @@ nav a {
 }
 
 @media screen and (max-width: 600px) {
-  #FAQ {
-    min-height: 580px;
-  }
 
   #FAQ .faq_title {
     margin-top: 80px;
@@ -477,8 +464,12 @@ nav a {
 
   .faq_title h3 {
     font-size: 20px;
-    padding-left: 150px;
+    padding-left: 130px;
   }
+  .faq_title h1 {
+    font-size: 32px;
+  }
+
 
   .faq_title h3::after {
     width: 10%;

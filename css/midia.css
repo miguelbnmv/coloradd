@@ -4,7 +4,8 @@ nav a {
 
 /*----------------------INTRO------------------------*/
 #midia_header {
-  height: 840px;
+  height: auto;
+  padding-bottom: 6%;
 }
 .midia_title {
   padding-top: 130px;
@@ -37,19 +38,19 @@ nav a {
 }
 
 .header_img {
-  margin-top: 60px;
-  text-align:center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 6% 0 0 10%;
+  position: relative;
+  width: 100%;
+}
+.header_img img{
+  width: 80%;
 }
 
 .header_text {
-  text-align: left;
   position: absolute;
-  margin-left: 140px;
-  margin-right: 500px;
-  margin-top: 360px;
-  color: #ffffff;
+  margin: 0 40% 0 2%;
+  bottom: 10%;
+  color: #fff;
 }
 .header_text h2{
   font-size: 2em;
@@ -74,29 +75,61 @@ nav a {
   .midia_title h3 {
     font-size: 20px;
   }
+  .midia_title h3::after {
+    margin-top: -25px;
+  }
+  .header_text {
+    margin: 2% 30% 0 0;
+    color: #000;
+    position: relative;
+  }
+  .header_text h2{
+    font-size: 1.2em;
+  }
+  .header_text p{
+    margin-top: 2%;
+    font-size: 0.8em;
+  }
+
 }
 
 
 /*----------------------NEWS------------------------*/
 
 #midia_news {
-  height: 1000px;
+  height: auto;
+  padding-bottom: 15%;
 }
 
 .news_container {
-  margin-left: 260px;
+  margin: 0 10%;
 }
-
 .new{
   display: flex;
   padding-top: 80px;
 }
-.new_text {
-  margin-top: 20px;
-  margin-left: 80px;
-  margin-right: 300px;
+.new img{
+  width: 40%;
+  height: 40%;
 }
-.new_text p {
-  font-size: 14px;
-    color: #666363;
+.new_text{
+  margin-left: 5%;
+}
+@media screen and (max-width: 700px) {
+  .new{
+    display: block;
+  }
+  .new img{
+    width: 60%;
+    height: 60%;
+  }
+  .new_text{
+    margin: 2% 0 0 0;
+  }
+  .new_text h2{
+    font-size: 1.2em;
+  }
+  .new_text p{
+    font-size: 0.8em;
+  }
 }

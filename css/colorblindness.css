@@ -8,15 +8,13 @@ nav a {
 
 /*----------------------INTRO------------------------*/
 #cb-header {
-  height: 850px;
+  height: auto;
 }
-
 .cb-title {
-  padding-top: 130px;
+  padding: 10% 0 0 10%;
 }
 
 .cb-title h1 {
-  padding-left: 80px;
   position: absolute;
   font-family: Open Sans;
   font-weight: 800;
@@ -36,26 +34,19 @@ nav a {
 }
 
 .cb-title h3 {
-  padding-left: 80px;
   font-weight: bold;
   font-size: 50px;
   line-height: 87px;
 }
-
-.cb-title img {
-  padding-top: 40px;
-  width: 1000px;
-  margin: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.cb-image{
+  margin:2% 10%;
+}
+.cb-image img{
+  width: 100%;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width: 700px) {
-  .cb-title {
-    padding-top: 80px;
-    padding-left: 40px;
-  }
 
   .cb-title h1 {
     font-size: 32px;
@@ -65,30 +56,49 @@ nav a {
   .cb-title h3 {
     font-size: 20px;
   }
+  .cb-title h3::after {
+    margin-top: -25px;
+  }
 }
 
 /*----------------------QUESTS------------------------*/
-#quest1 {
-  height: 500px;
-  text-align: center;
+#quests {
+  height: auto;
+  padding-bottom: 10%;
 }
-
-#quest1 h2 {
-  margin-top: 80px;
-  font-size: 4em;
-  color: #666363;
+#quests h2{
+  font-size: 3em;
+  color: #FFCF26;
 }
-
-/*----------------------SCROLLMAGIC------------------------*/
-
-
-
-/*----------------------INFO------------------------*/
-#reveal1 {
-  height: 600px;
-  text-align: center;
-  margin-left: 200px;
-  margin-right: 200px;
+#quests p, ul{
+  margin-top: 2%;
 }
-
-#reveal1 p {}
+.quest{
+  background-color: #ffffff;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+  padding: 5%;
+  border-radius: 25px;
+}
+.quest1{
+  margin: 10% 10% 0 10%;
+}
+.effect{
+  margin: 5% 10%;
+}
+.impacts{
+  margin: 5% 10%;
+}
+.impacts li{
+  list-style-position: inside;
+}
+.impacts p{
+  margin-top: 2%;
+}
+@media screen and (max-width: 700px) {
+  #quests h2{
+    font-size: 1.2em;
+  }
+  #quests p , li{
+    font-size: 0.8em;
+  }
+}

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/colorblindness.css">
   <link rel="stylesheet" href="css/masonry.css">
   <link rel="stylesheet" href="css/hamburguer.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="js/scroll.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
@@ -61,8 +62,8 @@
           <a href="midia.html">
             <li>Midia</li>
           </a>
-          <a>
-            <li id="myBtn" onclick="revealForm()" onclick="hideMenu()">Contact</li>
+          <a onclick="revealForm()">
+            <li>Contact</li>
           </a>
         </ul>
       </div>
@@ -72,12 +73,13 @@
 
 
     <div class="modal" id="hiddenForm" style="display:none">
-      <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
           <span class="close">&times;</span>
           <h2>Contact Form</h2>
         </div>
+
+
 
         <div class="modal-body">
 
@@ -95,8 +97,8 @@
             </div>
 
             <div class="pt2">
-              <input type="text" name="Name" value="Name">
-              <input type="text" name="Mail" value="Mail">
+              <input type="text" name="Name" placeholder="Name">
+              <input type="text" name="Mail" placeholder="E-mail">
             </div>
 
 
@@ -112,11 +114,11 @@
             </div>
 
             <div class="pt4">
-              <textarea name="name" rows="8" cols="80"></textarea>
+              <textarea placeholder="Your message"></textarea>
             </div>
 
             <div class="pt5">
-              <input type="submit" name="" value="Submit"></input>
+              <input type="submit" value="Submit"></input>
             </div>
 
           </form>
@@ -137,54 +139,43 @@
     <div class="cb-title">
       <h1>WHAT IS</h1>
       <h3>COLORBLINDNESS</h3>
+    </div>
+    <div class="cb-image">
       <img src="img/cblindness.jpg">
     </div>
   </section>
 
-  <section id="quest1">
-    <h2>What is it?</h2>
-
-    <script>
-      // init controller
-      var controller = new ScrollMagic.Controller();
-    </script>
-    <div class="spacer s2"></div>
-    <div id="trigger1" class="spacer s0"></div>
-    <div id="animate1" class="box2 skin">
-      <p>You wouldn't like me, when I'm angry!</p>
+  <section id="quests">
+    <div class="quest quest1" data-aos="fade-right">
+      <h2>What is it?</h2>
+      <p>There are different causes of color blindness. For the vast majority of people with deficient color vision the condition is genetic and has been inherited from their mother. Most colorblind people are able to see things as clearly as other people, but they are unable to fully ‘see’ colors. There are different types of colorblindness and there are extremely rare cases where people are unable to see any color at all. </p>
     </div>
-    <div class="spacer s2"></div>
-    <script>
-      // build scene
-      var scene = new ScrollMagic.Scene({
-          triggerElement: "#trigger1"
-        })
-        .setTween("#animate1", 0.5, {
-          backgroundColor: "green",
-          scale: 2.5
-        }) // trigger a TweenMax.to tween
-        .addIndicators({
-          name: "1 (duration: 0)"
-        }) // add indicators (requires plugin)
-        .addTo(controller);
-    </script>
-
-
+    <div class="quest effect" data-aos="fade-left">
+      <h2>The effect... </h2>
+      <p>Because most of today’s communication is based on colors, this invisible limitation makes color blinded people with feel excluded from society</p>
+    </div>
+    <div class="quest impacts" data-aos="zoom-in-up">
+      <h2>Colorblindness impacts… </h2>
+      <ul>
+        <li>Approximately <b>5%</b> of world population is colorblind, that means 350 million people;</li>
+        <li><b>90%</b> Of the worldwide communication is based on colors;</li>
+        <li><b>17%</b> Had their colorblindness undetected until the age of 20;</li>
+        <li><b>73%</b> Already felt ashamed for the chosen color;</li>
+        <li><b>90%</b> Ask for help when Buying clothes;</li>
+        <li><b>41%</b> Feels difficulties in Social integration </li>
+      </ul>
+    </div>
   </section>
 
 
 
-
-
-
-  <section id="impacts">
-
-  </section>
-
-
-
-
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+  offset: 200,
+  delay: 50,
+});
+</script>
 </body>
 
 

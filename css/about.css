@@ -5,8 +5,7 @@ nav a {
 /*----------------------INTRO------------------------*/
 
 .about_title {
-  padding-top: 180px;
-  padding-left: 80px;
+  padding: 15% 0 0 6%;
 }
 
 .about_title h1 {
@@ -33,30 +32,24 @@ nav a {
   font-size: 64px;
   line-height: 87px;
 }
-
-@media screen and (max-width: 700px) {
-
-  .about_title {
-    padding-top: 80px;
-    padding-left: 40px;
-  }
+@media screen and (max-width: 530px) {
 
   .about_title h1 {
     font-size: 32px;
-    margin-top: -15px;
   }
 
   .about_title h3 {
+    margin-top: -10px;
     font-size: 20px;
   }
   .about_title h3::after {
-    margin-top: -20px;
+    margin-top: -24px;
   }
 }
 
 /*----------------------QUESTS------------------------*/
 #question_tab {
-  min-height: 460px;
+  height: 500px;
 }
 
 .tab {
@@ -105,8 +98,7 @@ nav a {
 .quests_mobile {
   margin-top: -140px;
   display: none;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 6%;
 }
 
 .quests_mobile h3 {
@@ -115,11 +107,14 @@ nav a {
 }
 
 .quests_mobile p {
-  font-size: 11px;
+  font-size: 0.8em;
   color: #666363;
 }
 
 @media screen and (max-width: 980px) {
+  #question_tab {
+    height: 400px;
+  }
   .tab {
     display: none;
   }
@@ -145,8 +140,8 @@ nav a {
 
 .story_text {
   text-align: left;
-  padding-left: 80px;
-  margin-top: 100px;
+  margin: 0 8% 0 6%;
+  margin-top: 5%;
   width: 40%;
 }
 
@@ -191,28 +186,15 @@ nav a {
   }
 
   .story_text {
-    text-align: left;
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 100%;
-    margin-top: -80px;
+    width: 70%;
   }
 
   .story_img img {
     float: left;
-    margin-right: 0px;
-    padding-left: 40px;
-    margin-top: 20px;
+    margin: 4% 0 0 6%;
     width: 80%;
   }
 }
-
-@media screen and (max-width: 980px) {
-  .story_text p {
-    font-size: 1em;
-  }
-}
-
 @media screen and (max-width: 530px) {
   #story {
     height: 200px;
@@ -224,6 +206,9 @@ nav a {
 
   .story_text h3 {
     font-size: 20px;
+  }
+  .story_text p {
+    font-size: 0.8em;
   }
 }
 
@@ -280,14 +265,12 @@ nav a {
   color: #FFCF26;
 }
 @media screen and (max-width: 530px) {
-  .info-accordion {
-  }
 }
 
 /*----------------------TEAM------------------------*/
 #team {
-  height: 800px;
-  display: block;
+  height: auto;
+  padding-bottom: 15%;
 }
 
 .team-text {
@@ -348,21 +331,31 @@ nav a {
 }
 
 @media screen and (max-width: 600px) {
+  .team-container{
+    margin-left: 6%;
+  }
   .team-text {
     padding-right: 0px;
   }
   .team-text h1 {
     font-size: 32px;
-    margin-left: 50px;
+    margin: -30px 0 0 33px;
   }
   .team-text h3 {
     font-size: 20px;
     margin-right: 40px;
   }
-
-
   .team-text h3::after {
     width: 65%;
+  }
+  .member h1{
+    font-size: 30px;
+  }
+  .member h3{
+    font-size: 20px;
+  }
+  .member img{
+    width: 80%;
   }
 }
 
@@ -374,8 +367,7 @@ nav a {
 
 .social_title {
   text-align: left;
-  padding-top: 40px;
-  padding-left: 80px;
+  padding: 10% 0 0 6%;
 }
 
 .social_title h1 {
@@ -402,8 +394,7 @@ nav a {
 }
 
 .social_text {
-  margin-top: -10%;
-  padding-left: 80px;
+  margin: -10% 6% 0 6%;
 }
 
 .social_text h2 {
@@ -425,9 +416,7 @@ nav a {
   }
 
   .social_text {
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 40px;
+    margin-top: 10%;
   }
 
   .social_text h2 {

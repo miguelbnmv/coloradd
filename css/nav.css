@@ -3,8 +3,15 @@
   padding: 0px;
   font-family: 'Poppins';
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+
 }
 
+button:focus {
+  outline:0;
+}
 /*----------------------NAVBAR------------------------*/
 nav {
   position: fixed;
@@ -87,40 +94,26 @@ nav button:hover {
 /*----------------------CONTACT------------------------*/
 .modal {
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.8);
-  /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
 }
 
-/* Modal Content */
 .modal-content {
   position: relative;
-  background-color: #ffffff;
-  margin: auto;
-  padding: 0;
-  width: 80%;
+  background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  width: 80vw;
+  height: 80vh;
+  margin: 10vh 10vw;
 }
 
-/* Add Animation */
 @-webkit-keyframes animatetop {
   from {
     top: -300px;
@@ -145,12 +138,13 @@ nav button:hover {
   }
 }
 
-/* The Close Button */
 .close {
   color: #000000;
-  float: right;
+  position: absolute;
   font-size: 28px;
+  right: 0;
   font-weight: bold;
+  margin: 2%;
 }
 
 .close:hover,
@@ -161,107 +155,89 @@ nav button:hover {
 }
 
 .modal-header {
-  padding: 20px 18px;
-  height: 40px;
   background-color: #ffffff;
   color: #666363;
   text-align: center;
 }
-
-.modal-body {
-  height: 520px;
-  padding-top: 20px;
+.modal-header h2{
+  padding-top: 3%;
+  font-size: 1.5em;
 }
 
-.modal-body .pt1 {
-  text-align: center;
-  margin-top: 20px;
+.pt1 {
+  margin-top: 4%;
 }
-
 .pt1 select {
   color: #000000;
-  background-color: transparent;
-  font-size: 18px;
-  padding-left: 30px;
-  height: 60px;
-  width: 820px;
+  background-color: #fff;
+  font-size: 1em;
   border: solid 3px #ffffff;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
   outline: none;
+  margin: auto;
+  display: block;
+  width: 70%;
+  height: 50px;
 }
-
-.pt2 {
+.pt2{
+  margin-top: 1.5%;
   display: flex;
-  text-align: center;
-  margin-top: 40px;
-  justify-content: space-around;
-  margin-left: 150px;
-  margin-right: 150px;
+  justify-content: center;
 }
-
 .pt2 input {
-  font-family: Poppins;
   color: #000000;
-  background-color: transparent;
-  font-size: 18px;
-  padding-left: 30px;
-  height: 60px;
-  margin-top: 10px;
+  background-color: #fff;
+  font-size: 1em;
   border: none;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
-  width: 402px;
   outline: none;
+  width: 34%;
+  height: 50px;
+  margin: 1.5%;
 }
 
-.mail {
-  margin-left: 40px;
+.pt3{
+  margin-top: 1.5%;
 }
-
-.modal-body .pt3 {
-  margin-top: 40px;
-  text-align: center;
-}
-
 .pt3 select {
   color: #000000;
-  background-color: transparent;
-  font-size: 18px;
-  padding-left: 30px;
-  height: 60px;
-  width: 820px;
+  background-color: #fff;
+  font-size: 1em;
   border: none;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
   outline: none;
+  margin: auto;
+  display: block;
+  width: 70%;
+  height: 50px;
 }
 
-.modal-body .pt4 {
-  margin-top: 40px;
-  text-align: center;
+.pt4{
+  margin-top: 3%;
 }
 
 .pt4 textarea{
   color: #000000;
-  background-color: transparent;
-  font-size: 18px;
-  padding-left: 30px;
-  height: 60px;
-  width: 820px;
+  background-color: #fff;
+  font-size: 1em;
   border: none;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
   outline: none;
-}
-
-.modal-body .pt5 {
-  text-align: center;
-  margin-top: 15px;
+  margin: auto;
+  display: block;
+  width: 70%;
+  height: 100px;
 }
 
 .pt5 input {
   border-style: none;
   background-color: #FFCF26;
   color: #666363;
-  padding: 20px 80px 20px 80px;
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+  margin: 3% auto 0 auto;
+  font-size: 1em;
+  padding: 1.5% 6%;
+  display: block;
 }
 
 /*-----------------------FOOTER------------------------*/

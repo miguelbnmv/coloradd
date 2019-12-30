@@ -57,8 +57,8 @@
           <a href="midia.html">
             <li>Midia</li>
           </a>
-          <a>
-            <li id="myBtn" onclick="revealForm()" onclick="hideMenu()">Contact</li>
+          <a onclick="revealForm()">
+            <li>Contact</li>
           </a>
         </ul>
       </div>
@@ -68,12 +68,13 @@
 
 
     <div class="modal" id="hiddenForm" style="display:none">
-      <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
           <span class="close">&times;</span>
           <h2>Contact Form</h2>
         </div>
+
+
 
         <div class="modal-body">
 
@@ -91,8 +92,8 @@
             </div>
 
             <div class="pt2">
-              <input type="text" name="Name" value="Name">
-              <input type="text" name="Mail" value="Mail">
+              <input type="text" name="Name" placeholder="Name">
+              <input type="text" name="Mail" placeholder="E-mail">
             </div>
 
 
@@ -108,11 +109,11 @@
             </div>
 
             <div class="pt4">
-              <textarea name="name" rows="8" cols="80"></textarea>
+              <textarea placeholder="Your message"></textarea>
             </div>
 
             <div class="pt5">
-              <input type="submit" name="" value="Submit"></input>
+              <input type="submit" value="Submit"></input>
             </div>
 
           </form>
@@ -135,14 +136,12 @@
     </div>
 
 
-    <div class="code_legend">
-      <img id="logo" src="img/code_logo.png">
+    <div id="code_legend">
+      <img id="logo"  src="img/code_logo.png">
       <img id="legend" src="img/legend.jpg">
     </div>
 
-
   </section>
-
 
 
   <section id="code_video">
@@ -154,7 +153,35 @@
   </section>
 
 
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+
+
+  $('#logo').hover(function(){
+    $('#logo').animate({marginLeft:"-40%"}, 300);
+    $('#legend').animate({marginLeft:"19%", opacity:"1"}, 300);
+  });
+
+</script>
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
+
+
+
 <footer>
 
   <div class="footer_info">

@@ -8,8 +8,7 @@ nav a {
 }
 
 .code_title {
-  padding-top: 180px;
-  padding-left: 80px;
+  padding: 10% 0 0 10%;
 }
 
 .code_title h1 {
@@ -37,24 +36,35 @@ nav a {
   line-height: 87px;
 }
 
-.code_legend {
-  width: 80%;
+#code_legend{
+  margin-top: 5%;
   display: flex;
-  justify-content: space-around;
-  margin: 2rem auto;
+  justify-content: center;
 }
 
-.code_legend img {
+#logo {
   width: 40%;
-  height: auto;
+  z-index: 2;
 }
-
-.code_legend:hover > #legend {
-  display: block;
+#legend{
+  margin-top: 3%;
+  width: 40%;
+  position: absolute;
+  opacity: 0;
 }
+@media screen and (max-width: 700px) {
 
-#legend {
-  display: none;
+  .code_title h1 {
+    font-size: 32px;
+    margin-top: -15px;
+  }
+
+  .code_title h3 {
+    font-size: 20px;
+  }
+  .code_title h3::after {
+    margin-top: -25px;
+  }
 }
 
 /*----------------------VIDEO------------------------*/

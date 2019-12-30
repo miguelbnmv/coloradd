@@ -1,7 +1,12 @@
 var form = document.getElementById("hiddenForm");
+var menu = document.getElementById("hiddenMenu");
+
 
 function revealForm() {
-  form.style.display = "block"
+  form.style.display = "block";
+  if(form.style.display == "block"){
+    menu.style.display = "none";
+  }
 }
 
 var span = document.getElementsByClassName("close")[0];
