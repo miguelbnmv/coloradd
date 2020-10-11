@@ -4,75 +4,58 @@ nav a {
 
 /*----------------------INTRO------------------------*/
 #intro {
-  height: 600px;
+  padding-bottom: 8%;
 }
-
-.code_title {
-  padding: 10% 0 0 10%;
+.code-title{
+  padding: 8% 0 0 8%;
 }
-
-.code_title h1 {
-  position: absolute;
-  font-family: Open Sans;
-  font-weight: 800;
-  font-size: 70px;
-  line-height: 95px;
-  margin-top: -30px;
+.code-title h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
   color: rgba(0, 0, 0, 0.06);
+  position: relative;
 }
-
-.code_title h3::after {
+.code-title h3 {
+  position: absolute;
+  margin-top: -35px;
+  font-size: 28px;
+}
+.code-title h3::after {
   display: block;
   content: '';
-  width: 10%;
   height: 4px;
   background: #FFCF26;
   margin-top: 4px;
+  width: 50%;
 }
-
-.code_title h3 {
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 87px;
-}
-
-#code_legend{
-  margin-top: 5%;
+.code-info{
+  padding: 4% 8% 0 8%;
   display: flex;
-  justify-content: center;
+  margin: -4% auto;
+  align-items:center;
+  justify-content:center;
 }
-
-#logo {
+.code-info img{
   width: 40%;
-  z-index: 2;
+  height: 40%;
 }
-#legend{
-  margin-top: 3%;
-  width: 40%;
-  position: absolute;
-  opacity: 0;
+.code-info p{
+  color: #666363;
 }
-@media screen and (max-width: 700px) {
-
-  .code_title h1 {
-    font-size: 32px;
-    margin-top: -15px;
-  }
-
-  .code_title h3 {
-    font-size: 20px;
-  }
-  .code_title h3::after {
-    margin-top: -25px;
-  }
+.code-top p{
+  margin-right: 8%;
+}
+.code-bottom p{
+  margin-left: 8%;
 }
 
 /*----------------------VIDEO------------------------*/
-#code_video {
+#code-video {
   height: 600px;
 }
 
-.container_video {
+.container-video {
   margin-top: 100px;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -80,6 +63,35 @@ nav a {
   text-align: center;
 }
 
-.container_video video {
+.container-video video {
   box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/*----------------------EXAMPLES------------------------*/
+#examples {
+  height: 600px;
+}
+.ex-title{
+  padding: 8% 0 0 8%;
+}
+.ex-title h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  color: rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+.ex-title h3 {
+  position: absolute;
+  margin-top: -35px;
+  font-size: 28px;
+}
+.ex-title h3::after {
+  display: block;
+  content: '';
+  height: 4px;
+  background: #FFCF26;
+  margin-top: 4px;
+  width: 50%;
 }

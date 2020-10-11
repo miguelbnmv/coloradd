@@ -7,98 +7,74 @@ nav a {
 }
 
 /*----------------------INTRO------------------------*/
-#cb-header {
-  height: auto;
-}
 .cb-title {
-  padding: 10% 0 0 10%;
+  padding: 8% 8% 4% 8%;
 }
-
 .cb-title h1 {
-  position: absolute;
-  font-family: Open Sans;
-  font-weight: 800;
-  font-size: 70px;
-  line-height: 95px;
-  margin-top: -30px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
   color: rgba(0, 0, 0, 0.06);
+  position: relative;
 }
-
+.cb-title h3 {
+  position: absolute;
+  margin-top: -35px;
+  font-size: 28px;
+}
 .cb-title h3::after {
   display: block;
   content: '';
-  width: 8%;
   height: 4px;
   background: #FFCF26;
   margin-top: 4px;
+  width: 50%;
 }
 
-.cb-title h3 {
-  font-weight: bold;
-  font-size: 50px;
-  line-height: 87px;
+.cb-intro-info{
+  display: flex;
+  padding: 0 8% 4% 8%;
 }
-.cb-image{
-  margin:2% 10%;
+.cb-intro-info{
+  color: #666363;
+  width: 60%;
 }
-.cb-image img{
-  width: 100%;
-  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
-}
-
-@media screen and (max-width: 700px) {
-
-  .cb-title h1 {
-    font-size: 32px;
-    margin-top: -15px;
-  }
-
-  .cb-title h3 {
-    font-size: 20px;
-  }
-  .cb-title h3::after {
-    margin-top: -25px;
-  }
+.cb-intro-info img{
+  filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
+  position: absolute;
+  width: 35%;
+  top: 8%;
+  right: 8%;
 }
 
-/*----------------------QUESTS------------------------*/
-#quests {
-  height: auto;
-  padding-bottom: 10%;
+
+/*----------------------TYPES------------------------*/
+.cb-types-info{
+  padding: 0 8% 2% 8%;
 }
-#quests h2{
-  font-size: 3em;
-  color: #FFCF26;
+.cb-types-info p{
+  color: #666363;
 }
-#quests p, ul{
-  margin-top: 2%;
+.cb-types-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 8%;
 }
-.quest{
-  background-color: #ffffff;
-  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
-  padding: 5%;
-  border-radius: 25px;
+.cb-type {
+  background: #FFFFFF;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 16px;
+  text-align: center;
+  padding: 2%;
+  width: 32%;
 }
-.quest1{
-  margin: 10% 10% 0 10%;
+.cb-type h3{
+  font-size: 1.5em;
 }
-.effect{
-  margin: 5% 10%;
+.cb-type-info img{
+  margin: 4% 0;
+  width: 40%;
 }
-.impacts{
-  margin: 5% 10%;
-}
-.impacts li{
-  list-style-position: inside;
-}
-.impacts p{
-  margin-top: 2%;
-}
-@media screen and (max-width: 700px) {
-  #quests h2{
-    font-size: 1.2em;
-  }
-  #quests p , li{
-    font-size: 0.8em;
-  }
+.cb-type-info p{
+  color: #666363;
 }
