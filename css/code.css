@@ -70,10 +70,9 @@ nav a {
 
 /*----------------------EXAMPLES------------------------*/
 #examples {
-  height: 600px;
 }
 .ex-title{
-  padding: 8% 0 0 8%;
+  padding: 4% 0 0 8%;
 }
 .ex-title h1 {
   font-weight: 600;
@@ -95,3 +94,17 @@ nav a {
   margin-top: 4px;
   width: 50%;
 }
+
+
+.gallery {
+  margin: 6% 0 10% 0; 
+}
+.gallery-cell {
+  width: 40%;
+  height: 45vh;
+  margin-right: 1%;
+  border-radius: 25px;
+  counter-increment: gallery-cell;
+  object-fit: cover;
+}
+

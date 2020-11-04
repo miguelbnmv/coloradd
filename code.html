@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/masonry.css">
   <link rel="stylesheet" href="css/hamburguer.css">
+  <link rel="stylesheet" href="css/flickity.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
@@ -159,14 +160,21 @@
 
 
     <section id="examples">
+
       <div class="ex-title">
         <h1>IMPLEMENTAÇÃO</h1>
         <h3>EXEMPLOS</h3>
       </div>
 
       <div class="ex-slider">
-        
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+          <img class="gallery-cell" src="img/miguel-neiva.jpg" alt="example-img">
+          <img class="gallery-cell" src="img/miguel-neiva.jpg" alt="example-img">
+          <img class="gallery-cell" src="img/miguel-neiva.jpg" alt="example-img">
+          <img class="gallery-cell" src="img/miguel-neiva.jpg" alt="example-img">
+        </div>
       </div>
+
     </section>
 
 
@@ -206,8 +214,8 @@
     </div>
   
   </footer>
-
-
+  
+  <script src="js/flickity.pkgd.js"></script>
 </body>
 
 </html>
